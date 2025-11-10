@@ -1,6 +1,9 @@
 import { Mail, Facebook, Twitter, Instagram, ArrowUpRight } from "lucide-react";
 import curevalogo from "../assets/images/Cureva-logo2.png"
 import { motion } from "framer-motion";
+import twitter from "../assets/images/twitter.png"
+import instagram from "../assets/images/instagram.png"
+import facebook from "../assets/images/facebook.png"
 
 export const Footer: React.FC = () => {
     return (
@@ -63,9 +66,9 @@ export const Footer: React.FC = () => {
 
 
                 <div className="flex gap-4 mt-3 md:mt-0">
-                    <Facebook className="w-4 h-4 hover:text-primary cursor-pointer rounded-2xl" />
-                    <Twitter className="w-4 h-4 hover:text-primary cursor-pointer rounded-2xl" />
-                    <Instagram className="w-4 h-4 hover:text-primary cursor-pointer rounded-2xl" />
+                    <img src={twitter} alt="twitter" className="w-6 h-6 hover:text-primary cursor-pointer rounded-2xl" />
+                    <img src={instagram} alt="instagram" className="w-6 h-6 hover:text-primary cursor-pointer rounded-2xl" />
+                    <img src={facebook} alt="facebook" className="w-6 h-6 hover:text-primary cursor-pointer rounded-2xl" />
                 </div>
             </div>
         </motion.footer>

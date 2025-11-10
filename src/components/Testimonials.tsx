@@ -2,7 +2,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Star, ArrowLeft, ArrowRight } from "lucide-react";
 
-// 🖼️ sample local images (replace with your own)
 import person1 from "../assets/images/testimonial.png";
 import person2 from "../assets/images/testimonial.png";
 import person3 from "../assets/images/testimonial.png";
