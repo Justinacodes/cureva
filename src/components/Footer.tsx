@@ -1,4 +1,4 @@
-import { Mail, Facebook, Twitter, Instagram, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import curevalogo from "../assets/images/Cureva-logo2.png"
 import { motion } from "framer-motion";
 import twitter from "../assets/images/twitter.png"
@@ -41,12 +41,12 @@ export const Footer: React.FC = () => {
                         <input
                             type="text"
                             placeholder="Your first name"
-                            className="w-full p-2 rounded-lg text-black border-gray border-1 focus:outline-none text-sm"
+                            className="w-full p-2 rounded-lg text-black border-gray border focus:outline-none text-sm"
                         />
                         <input
                             type="email"
                             placeholder="Your email"
-                            className="w-full p-2 rounded-lg text-black border-gray border-1 focus:outline-none text-sm"
+                            className="w-full p-2 rounded-lg text-black border-gray border focus:outline-none text-sm"
                         />
 
                         <button className="w-full flex items-center justify-center gap-2 border-2 border-primary bg-white text-primary  hover:bg-primary hover:text-white transition rounded-3xl py-2 text-sm font-medium mb-3"> Join Now
