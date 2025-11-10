@@ -10,7 +10,8 @@ const Hero: React.FC = () => {
             className="min-h-screen bg-cover bg-center flex items-center font-sans page-container"
             style={{ backgroundImage: `url(${bgImage})` }}
         >
-            <div className="absolute inset-0 bg-white/10"></div>
+            <div className="relative z-10 inset-0 bg-white/10"></div>
+         
 
             <div className="max-w-7xl mt-16">
                 <motion.div
