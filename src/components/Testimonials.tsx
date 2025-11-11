@@ -1,12 +1,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Star, ArrowLeft, ArrowRight } from "lucide-react";
-
 import person1 from "../assets/images/testimonial.png";
-import person2 from "../assets/images/testimonial.png";
-import person3 from "../assets/images/testimonial.png";
-import person4 from "../assets/images/testimonial.png";
-import person5 from "../assets/images/testimonial.png";
+
 
 interface Testimonial {
   text: string;
@@ -23,22 +19,22 @@ const testimonials: Testimonial[] = [
   {
     text: "I am incredibly impressed with the outstanding service and user-friendly customer support provided by Cureva.",
     name: "Orlando Diggs",
-    image: person2,
+    image: person1,
   },
   {
     text: "This app has changed my life so much. I can finally pretend to know what I am doing.",
     name: "Orlando Diggs",
-    image: person3,
+    image: person1,
   },
   {
     text: "I am incredibly impressed with the outstanding service and user-friendly customer support provided by Cureva.",
     name: "Orlando Diggs",
-    image: person4,
+    image: person1,
   },
   {
     text: "This app has changed my life so much. I can finally pretend to know what I am doing.",
     name: "Orlando Diggs",
-    image: person5,
+    image: person1,
   },
 ];
 
@@ -60,7 +56,7 @@ export const Testimonials: React.FC = () => {
       </h2>
 
       {/* Carousel Container */}
-      <div className="relative">
+      <div className="relative font-sans">
         <motion.div
           className="flex gap-6 transition-transform duration-500 ease-out"
           animate={{ x: `-${index * (100 / 3)}%` }} 
@@ -81,7 +77,7 @@ export const Testimonials: React.FC = () => {
                 ))}
               </div>
 
-              <p className="text-gray italic mb-6">“{t.text}”</p>
+              <p className="text-gray mb-6">“{t.text}”</p>
 
               <div className="flex items-center gap-3">
                 <img
